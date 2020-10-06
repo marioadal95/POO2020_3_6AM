@@ -70,15 +70,16 @@
             this.Column3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.pOO2020_3_6AMDataSet2 = new _002_ComponentesGraficos.POO2020_3_6AMDataSet2();
-            this.dataGridViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTableAdapter = new _002_ComponentesGraficos.POO2020_3_6AMDataSet2TableAdapters.DataGridViewTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valor1DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.valor2DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.valor3DataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pOO2020_3_6AMDataSet2 = new _002_ComponentesGraficos.POO2020_3_6AMDataSet2();
+            this.dataGridViewTableAdapter = new _002_ComponentesGraficos.POO2020_3_6AMDataSet2TableAdapters.DataGridViewTableAdapter();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.LB_hora = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comboBox1BindingSource)).BeginInit();
@@ -87,8 +88,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pOO2020_3_6AMDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pOO2020_3_6AMDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pOO2020_3_6AMDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // BT_Salida
@@ -479,20 +480,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(483, 150);
             this.dataGridView2.TabIndex = 30;
             // 
-            // pOO2020_3_6AMDataSet2
-            // 
-            this.pOO2020_3_6AMDataSet2.DataSetName = "POO2020_3_6AMDataSet2";
-            this.pOO2020_3_6AMDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataGridViewBindingSource
-            // 
-            this.dataGridViewBindingSource.DataMember = "DataGridView";
-            this.dataGridViewBindingSource.DataSource = this.pOO2020_3_6AMDataSet2;
-            // 
-            // dataGridViewTableAdapter
-            // 
-            this.dataGridViewTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -521,6 +508,20 @@
             this.valor3DataGridViewTextBoxColumn.HeaderText = "Valor3";
             this.valor3DataGridViewTextBoxColumn.Name = "valor3DataGridViewTextBoxColumn";
             // 
+            // dataGridViewBindingSource
+            // 
+            this.dataGridViewBindingSource.DataMember = "DataGridView";
+            this.dataGridViewBindingSource.DataSource = this.pOO2020_3_6AMDataSet2;
+            // 
+            // pOO2020_3_6AMDataSet2
+            // 
+            this.pOO2020_3_6AMDataSet2.DataSetName = "POO2020_3_6AMDataSet2";
+            this.pOO2020_3_6AMDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTableAdapter
+            // 
+            this.dataGridViewTableAdapter.ClearBeforeFill = true;
+            // 
             // timer1
             // 
             this.timer1.Enabled = true;
@@ -535,11 +536,19 @@
             this.LB_hora.Size = new System.Drawing.Size(0, 13);
             this.LB_hora.TabIndex = 31;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(465, 144);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 32;
+            // 
             // MiFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.LB_hora);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
@@ -571,8 +580,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pOO2020_3_6AMDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pOO2020_3_6AMDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pOO2020_3_6AMDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,5 +639,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn valor3DataGridViewTextBoxColumn;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label LB_hora;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
